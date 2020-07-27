@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<!-- <link rel="icon" href="%PUBLIC_URL%/favicon.ico" /> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta name="theme-color" content="#000000" />
+	<!-- <meta name="description" content="Web site created using create-react-app" /> -->
+	<!-- <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+	<link rel="manifest" href="%PUBLIC_URL%/manifest.json" /> -->
+	<link rel="stylesheet" href="index.css">
+	<link
+		href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&family=Montserrat:wght@400;500;700&family=Source+Sans+Pro&display=swap"
+		rel="stylesheet">
+
+	<title>Portfolio Page</title>
+</head>
+
+<body>
+	<noscript>You need to enable JavaScript to run this app.</noscript>
+	<div class="navbar">
+	</div>
+
+	<!-- Modal 1 -->
+	<div class="modal" id="modal1" data-animation="mixInAnimations">
+		<div class="modal-dialog">
+			<header class="modal-header">
+				Movie Searcher
+				<button class="close-modal" aria-label="close modal" data-close>
+					✕
+				</button>
+			</header>
+			<section class="modal-content">
+				<video controls width="100%">
+
+					<source src="videos/MovieProjPreview.mp4" type="video/mp4">
+
+					Sorry, your browser doesn't support embedded videos.
+				</video>
+			</section>
+		</div>
+	</div>
+
+	<!-- Modal 2 -->
+	<div class="modal" id="modal2" data-animation="mixInAnimations">
+		<div class="modal-dialog">
+			<header class="modal-header">
+				The Workout Dictionary
+				<button class="close-modal" aria-label="close modal" data-close>
+					✕
+				</button>
+			</header>
+			<section class="modal-content">
+				<video controls width="100%">
+
+					<source src="videos/Workout-Production.mp4" type="video/mp4">
+
+					Sorry, your browser doesn't support embedded videos.
+				</video>
+			</section>
+		</div>
+	</div>
+
+	<!-- Modal 3 -->
+	<div class="modal" id="modal3" data-animation="mixInAnimations">
+		<div class="modal-dialog" id="modal-3-dialog">
+			<header class="modal-header">
+				Instagram Clone
+				<button class="close-modal" aria-label="close modal" data-close>
+					✕
+				</button>
+			</header>
+			<section class="modal-content" id="modal-3-content">
+				<h1 id="modal-3-header">Currently in production...</h1>
+			</section>
+		</div>
+	</div>
+
+	<div class="hero-image-container">
+		<div class="hero-title-container">
+			<h1 class="header-title">Lucian Covic</h1>
+			<h1 class="sub-title">Clean, cool, simple designs</h1>
+		</div>
+	</div>
+	<section>
+		<div class="section-divider">
+			<div class="projects-header-container">
+				<div class="projects-title-container">
+					<h1 class="projects-title-header">Projects And Work</h1>
+					<h3 class="projects-subtitle">Striving to make clean interesting projects</h3>
+				</div>
+
+				<div class="projects-image-container">
+					<img class="projects-image" src="svgs/Asset_880.svg" alt="projects">
+				</div>
+			</div>
+			<div class="projects-container">
+				<ul class="projects-list">
+					<li class="projects-list-item" id="project-1" data-open="modal1">
+						<div class="origin-side-project">
+							<h1 class="project-title">Movie Searcher</h1>
+							<div class="project-svg-container">
+								<svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+									viewBox="0 0 20 20">
+									<path
+										d="M5.719 14.75c-0.236 0-0.474-0.083-0.664-0.252l-5.060-4.498 5.341-4.748c0.412-0.365 1.044-0.33 1.411 0.083s0.33 1.045-0.083 1.412l-3.659 3.253 3.378 3.002c0.413 0.367 0.45 0.999 0.083 1.412-0.197 0.223-0.472 0.336-0.747 0.336zM14.664 14.748l5.341-4.748-5.060-4.498c-0.413-0.367-1.045-0.33-1.411 0.083s-0.33 1.045 0.083 1.412l3.378 3.003-3.659 3.252c-0.413 0.367-0.45 0.999-0.083 1.412 0.197 0.223 0.472 0.336 0.747 0.336 0.236 0 0.474-0.083 0.664-0.252zM9.986 16.165l2-12c0.091-0.545-0.277-1.060-0.822-1.151-0.547-0.092-1.061 0.277-1.15 0.822l-2 12c-0.091 0.545 0.277 1.060 0.822 1.151 0.056 0.009 0.11 0.013 0.165 0.013 0.48 0 0.904-0.347 0.985-0.835z">
+									</path>
+								</svg>
+							</div>
+						</div>
+					</li>
+					<li class="projects-list-item" id="project-2" data-open="modal2">
+						<div class="origin-side-project">
+							<h1 class="project-title">The Workout Dictionary</h1>
+							<div class="project-svg-container">
+								<svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+									viewBox="0 0 20 20">
+									<path
+										d="M5.719 14.75c-0.236 0-0.474-0.083-0.664-0.252l-5.060-4.498 5.341-4.748c0.412-0.365 1.044-0.33 1.411 0.083s0.33 1.045-0.083 1.412l-3.659 3.253 3.378 3.002c0.413 0.367 0.45 0.999 0.083 1.412-0.197 0.223-0.472 0.336-0.747 0.336zM14.664 14.748l5.341-4.748-5.060-4.498c-0.413-0.367-1.045-0.33-1.411 0.083s-0.33 1.045 0.083 1.412l3.378 3.003-3.659 3.252c-0.413 0.367-0.45 0.999-0.083 1.412 0.197 0.223 0.472 0.336 0.747 0.336 0.236 0 0.474-0.083 0.664-0.252zM9.986 16.165l2-12c0.091-0.545-0.277-1.060-0.822-1.151-0.547-0.092-1.061 0.277-1.15 0.822l-2 12c-0.091 0.545 0.277 1.060 0.822 1.151 0.056 0.009 0.11 0.013 0.165 0.013 0.48 0 0.904-0.347 0.985-0.835z">
+									</path>
+								</svg>
+							</div>
+						</div>
+					</li>
+					<li class="projects-list-item" id="project-2" data-open="modal3">
+						<div class="origin-side-project">
+							<h1 class="project-title">Instagram Clone</h1>
+							<div class="project-svg-container">
+								<svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+									viewBox="0 0 20 20">
+									<path
+										d="M5.719 14.75c-0.236 0-0.474-0.083-0.664-0.252l-5.060-4.498 5.341-4.748c0.412-0.365 1.044-0.33 1.411 0.083s0.33 1.045-0.083 1.412l-3.659 3.253 3.378 3.002c0.413 0.367 0.45 0.999 0.083 1.412-0.197 0.223-0.472 0.336-0.747 0.336zM14.664 14.748l5.341-4.748-5.060-4.498c-0.413-0.367-1.045-0.33-1.411 0.083s-0.33 1.045 0.083 1.412l3.378 3.003-3.659 3.252c-0.413 0.367-0.45 0.999-0.083 1.412 0.197 0.223 0.472 0.336 0.747 0.336 0.236 0 0.474-0.083 0.664-0.252zM9.986 16.165l2-12c0.091-0.545-0.277-1.060-0.822-1.151-0.547-0.092-1.061 0.277-1.15 0.822l-2 12c-0.091 0.545 0.277 1.060 0.822 1.151 0.056 0.009 0.11 0.013 0.165 0.013 0.48 0 0.904-0.347 0.985-0.835z">
+									</path>
+								</svg>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</section>
+	<div class="about-me-container">
+		<div class="empty"></div>
+		<div class="about-me-info">
+			<div class="about-me-image-container">
+				<img class="about-me-image" src="svgs/Asset_150.png" alt="projects">
+			</div>
+			<div class="about-me-info-container">
+				<h2 class="about-me-title">Just A Bit About Me</h2>
+				<h3 class="about-me-subtitle">After graduating with a B.Sc degree from the University of Waterloo I
+					decided to try to learn some programming on my spare time. Ever since, I've been hooked and eager to
+					continue learning and creating new projects.</h3>
+				<h3 class="technologies-subtitle">Some Technologies I Enjoy Using:</h3>
+				<div class="technologies-container">
+					<ul class="proj-tech-list">
+						<li class="icon-item"><img class="proj-icon-img" src="svgs/icons8-html-5-50.png"
+								alt="tech-icons" /></li>
+						<li class="icon-item"><img class="proj-icon-img" src="svgs/icons8-sass.svg" alt="tech-icons" />
+						</li>
+						<li class="icon-item"><img class="proj-icon-img" src="svgs/icons8-node-js.svg"
+								alt="tech-icons" /></li>
+						<li class="icon-item"><img class="proj-icon-img" src="svgs/icons8-react-native.svg"
+								alt="tech-icons" /></li>
+						<li class="icon-item"><img class="proj-icon-img" src="svgs/icons8-javascript.svg"
+								alt="tech-icons" /></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="contact-container">
+		<div class="contact">
+			<div class="contact-info">
+				<h2 class="contact-title">Interested To Get In Touch?</h2>
+				<div class="contact-form-container">
+					<div class="form-subtext-container">
+						<p class="form-subtext">I'd love to hear back from you!</p>
+						<hr class="form-border">
+						<div class="contact-me-links">
+							<p class="form-subtext">Contact me at:</p>
+							<a class="email-link" href="mailto:lucian.covic@gmail.com">lucian.covic@gmail.com</a>
+							<hr class="form-border">
+							<p class="form-subtext">Follow me at:</p>
+							<div class="form-icons">
+								<a class="github-icon-tag" href="https://github.com/CLucian"><img class="github-icon"
+										src="svgs/github.svg"></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="contact-image-container">
+				<img class="contact-image" src="svgs/Asset_890.svg" alt="projects">
+			</div>
+		</div>
+	</div>
+	<div class="footer">
+		<p class="footer-text">Created And Designed By Lucian Covic&#169</p>
+	</div>
+	<div id="root"></div>
+
+
+	<script type="text/javascript">
+		const openEls = document.querySelectorAll("[data-open]");
+		const closeEls = document.querySelectorAll("[data-close]");
+		const isVisible = "is-visible";
+
+		for (const el of openEls) {
+			el.addEventListener("click", function () {
+				const modalId = this.dataset.open;
+				document.getElementById(modalId).classList.add(isVisible);
+			});
+		}
+
+		for (const el of closeEls) {
+			el.addEventListener("click", function () {
+				this.parentElement.parentElement.parentElement.classList.remove(isVisible);
+			});
+		}
+
+		document.addEventListener("click", e => {
+			if (e.target == document.querySelector(".modal.is-visible")) {
+				document.querySelector(".modal.is-visible").classList.remove(isVisible);
+			}
+		});
+
+		document.addEventListener("keyup", e => {
+			if (e.key == "Escape" && document.querySelector(".modal.is-visible")) {
+				document.querySelector(".modal.is-visible").classList.remove(isVisible);
+			}
+		});
+	</script>
+
+</body>
+
+</html>
