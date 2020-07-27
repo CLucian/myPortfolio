@@ -1,0 +1,703 @@
+html {
+  background-color: #252735;
+  font-size: 62.5%;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #252735;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+
+.open-modal {
+  font-weight: bold;
+  background: var(--blue);
+  color: var(--white);
+  padding: 0.75rem 1.75rem;
+  margin-bottom: 1rem;
+  border-radius: 5px;
+}
+
+
+/* MODAL
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  background: var(--black);
+  cursor: pointer;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.35s ease-in;
+  z-index: 999;
+
+}
+
+.modal.is-visible {
+  visibility: visible;
+  opacity: 1;
+}
+
+.modal-dialog {
+  position: relative;
+  max-width: 80%;
+  min-width: 58rem;
+  color: #fff;
+  max-height: 90vh;
+  min-height: 35.8rem;
+  height: auto;
+  border-radius: 5px;
+  background: var(--white);
+  overflow: auto;
+  cursor: default;
+  background-color: #282c34;
+  box-shadow:
+    0 0.28rem 0.22rem rgba(0, 0, 0, 0.034),
+    0 0.67rem 0.53rem rgba(0, 0, 0, 0.048),
+    0 1.25rem 1.0rem rgba(0, 0, 0, 0.06),
+    0 2.23rem 1.79rem rgba(0, 0, 0, 0.072);
+}
+
+.modal-header {
+  font-size: 2rem;
+  margin-left: 2rem;
+  font-weight: bold;
+}
+
+#modal-3-dialog {
+  width: 80rem;
+  height: 40rem;
+}
+
+#modal-3-header {
+  color: #e9b258;
+  font-size: 5rem;
+  text-align: center;
+  padding-top: 7rem;
+}
+
+
+.modal-dialog > * {
+  padding: 1rem;
+}
+
+.modal-header,
+.modal-footer {
+  background: var(--lightgray);
+}
+
+.modal-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.modal-header .close-modal {
+  font-size: 1.5rem;
+}
+
+.modal p + p {
+  margin-top: 1rem;
+}
+
+.active {
+  height: 100%;
+  width: 100%;
+}
+
+.hide {
+    display: none;
+}
+
+.navbar {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  font-size: 2rem;
+  background-color: #282c34;
+  color: white;
+  height: 5.5rem;
+  z-index: 5;
+} 
+
+.hero-image-container {
+  border-bottom: 0.2rem solid #252525;
+  border-bottom-left-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+  height: 50rem;
+  width: 100%;
+  background-image: url("pictures/fabian-grohs-RrFvYtCwO8E-unsplash-min.jpg");
+  box-shadow: inset 0 0 0 1000rem rgba(37, 39, 53, 0.9);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  min-width: 45rem;
+
+}
+
+
+
+.pic-container {
+  height: 20rem;
+}
+
+.circle-pic {
+  border-radius: 50%;
+  max-height: 100%;
+  max-width: 100%;
+}
+
+
+.header-title {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  color: #fff;
+  font-size: 10rem;
+  margin: 0;
+  text-shadow: 0 13.36px 8.896px #252525,0 -2px 1px #fff;
+}
+
+.sub-title {
+  text-align: center;
+  color: #e9e9eb;
+  text-shadow: 0.2rem 0.4rem 0.3rem rgba(0,0,0,0.3);
+}
+
+.section-divider {
+  background-color: #252735;
+}
+
+
+.projects-header-container {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 40rem;
+  min-width: 44rem;
+}
+
+.projects-title-container {
+  text-shadow: 0.2rem 0.4rem 0.3rem rgba(0,0,0,0.3);
+  font-size: 3rem;
+  font-family: 'MontSerrat', sans-serif;
+  color: #e9e9eb;
+  padding-bottom: none;
+}
+
+.projects-title-header {
+  margin: 0.5rem;
+  font-size: 5rem;
+  font-weight: 700;
+}
+
+.projects-subtitle {
+  padding: 1rem;
+  margin: 0;
+  font-size: 2rem;
+  color: #c8c8cc;
+  width: 90%;
+  line-height: 1.5;
+}
+
+.technologies-container {
+  display: flex;
+  justify-content: center;
+}
+
+.technologies-subtitle {
+  text-align: center;
+  font-size: 2rem;
+  color: #e9b258;
+}
+
+
+.proj-tech-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+}
+
+.icon-item {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  padding: 0 1rem 0 1rem;
+  
+}
+
+.projects-image-container {
+  border-radius: 50%;
+  width: 40rem;
+  height: 40rem;
+}
+
+.projects-list-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  perspective: 100rem;
+}
+
+.projects-list-item:hover {
+  cursor: pointer;
+}
+
+
+
+.project-title {
+  color: #e9b258;
+  margin-bottom: 6rem;
+  font-size: 3.5rem;
+  text-shadow: 0 13.36px 8.896px #252525, 0 -2px 1px #252735;
+  margin-bottom: 4rem;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+
+}
+
+.project-svg-container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+}
+
+svg {
+  display: flex;
+  justify-content: center;
+  font-size: 5rem;
+  width: 10%;
+  height: auto;
+}
+
+path {
+  display: flex;
+  font-size: 4rem;
+  justify-content: center;
+  fill: #e9b258;
+  
+}
+
+.projects-image {
+  width: 100%;
+  height: 100%;
+}
+
+.project-picture {
+  width: 95%;
+  height: auto;
+
+
+}
+
+.project1-gif {
+  width: 100%;
+  height: 100%;
+}
+
+.projects-container {
+  height: 29rem;
+}
+
+.projects-list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
+}
+
+.projects-list-item {
+  box-shadow:
+    0 0.28rem 0.22rem rgba(0, 0, 0, 0.034),
+    0 0.67rem 0.53rem rgba(0, 0, 0, 0.048),
+    0 1.25rem 1.0rem rgba(0, 0, 0, 0.06),
+    0 2.23rem 1.79rem rgba(0, 0, 0, 0.072);
+
+
+  border-radius: 0.2rem;
+  width: 25%;
+  height: 55rem;
+  background-color: #424557;
+  z-index: 10;
+
+}
+
+.origin-side-project {
+  width: 100%;
+}
+
+
+.about-me-image {
+  height: 20rem;
+}
+
+.about-me-container {
+  height: 90rem;
+  background-color: #333645;
+}
+
+.empty {
+  height: 42%;
+}
+
+.about-me-info {
+  display: flex;
+  justify-content: space-evenly;
+  min-width: 44rem;
+}
+
+.about-me-image-container {
+  width: 20rem;
+  height: 35rem;
+}
+
+.about-me-image {
+  display: flex;
+  align-items: flex-start;
+  width: 20rem;
+  height: 34.59rem;
+}
+
+.about-me-info-container {
+  width: 25%;
+}
+
+.about-me-title {
+  font-family: 'Montserrat', sans-serif;
+  text-shadow: 0.2rem 0.4rem 0.3rem rgba(0,0,0,0.3);
+  font-weight: 700;
+  font-size: 3rem;
+  color: #e9e9eb;
+  margin-top: 2rem;
+}
+
+.about-me-subtitle {
+  font-size: 2rem;
+  color: #c8c8cc;
+  padding-bottom: 2rem;
+  line-height: 1.5;
+
+}
+
+
+.contact-container {
+  height: 65rem;
+  background-color: #252735;
+  min-width: 43rem;
+}
+
+.contact { 
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 6rem;
+}
+
+.contact-info {
+  padding-top: 6rem;
+  width: 35%;
+}
+
+.contact-title {
+  font-family: 'Montserrat', sans-serif;
+  text-shadow: 0.2rem 0.4rem 0.3rem rgba(0,0,0,0.3);
+  font-weight: 700;
+  font-size: 3rem;
+  color: #e9e9eb;
+  margin-top: 5rem;
+}
+
+.contact-form-container {
+  width: 80%;
+  height: 60%;
+  border-radius: 0.3rem;
+  background-color: #424557;
+
+
+  box-shadow:
+    0 0.28rem 0.22rem rgba(0, 0, 0, 0.034),
+    0 0.67rem 0.53rem rgba(0, 0, 0, 0.048),
+    0 1.25rem 1.0rem rgba(0, 0, 0, 0.06),
+    0 2.23rem 1.79rem rgba(0, 0, 0, 0.072);
+}
+
+.form-subtext-container {
+  padding: 2rem;
+  font-size: 2rem;
+  font-family: 'Montserrat', sans-serif;
+  color: #c8c8cc;
+  line-height: 1.5;
+}
+
+.form-subtext {
+  width: 100%;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+}
+
+.form-border {
+  margin-top: 3rem;
+  width: 60%;
+}
+
+.github-icon-tag {
+  width: 3rem;
+  height: 3rem;
+}
+
+.github-icon {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.contact-me-links {
+  margin-top: 2rem;
+}
+
+.email-link {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  color: #e9b258;
+}
+
+.contact-subtitle {
+  font-size: 2rem;
+  color: #c8c8cc;
+  padding-bottom: 2rem;
+  width: 100%;
+  line-height: 1.5;
+}
+
+.form-icons {
+  display: flex;
+  justify-content: center;
+  padding-top: 1rem;
+  border-radius: 0.4rem;
+  width: 100%;
+  height: 10rem;
+}
+
+.contact-image-container {
+  width: 40rem;
+  height: 60rem;
+}
+
+.contact-image {
+  width: 100%;
+  height: 100%;
+}
+
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: #282c34;
+  min-width: 45rem;
+}
+
+.footer-text {
+  font-size: 1.2rem;
+  color: #c8c8cc;
+  text-align: center;
+  width: 12%;
+  font-weight: 500;
+}
+
+
+/* Media Queries */
+
+
+@media (max-width: 1500px) {
+	.about-me-info-container {
+    width: 35%;
+  }
+	.contact-info {
+		width: 45%
+  }
+  .contact-image {
+    width: 80%
+  }
+
+}
+
+@media (max-width: 1300px) {
+  .projects-list {
+    padding-top: 1.5rem;
+    display: flex;
+    justify-content: center;
+  }
+  .projects-list-item {
+    margin: 1.5rem;
+    width: 30%;
+    height: 50rem;
+  }
+
+}
+
+@media (max-width: 1200px) {
+	.about-me-container {
+    height: 95rem;
+  }
+
+ 
+}
+
+@media (max-width: 1000px) {
+  .contact-image {
+    padding-top: 3rem;
+    padding-left: 2rem;
+  }
+}
+
+@media (max-width: 900px) {
+
+  .projects-list {
+    justify-content: center;
+    padding-top: 5rem;
+  }
+
+  .projects-list-item {
+    margin: 1rem;
+    height: 45rem;
+    width: 30%;
+    min-width: 14.5rem;
+  }
+
+
+  .empty {
+    height: 30%;
+  }
+
+  .about-me-image {
+    padding-top: 5rem;
+  }
+
+	.about-me-container {
+    height: 100rem;
+  }
+
+  .contact {
+    padding: 0;
+    margin-left: 3rem;
+    margin-right: 3rem;
+  }
+
+  .contact-image {
+    padding-top: 4rem;
+  }
+
+  .projects-header-container {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-bottom: 0;
+  }
+ 
+}
+
+@media (max-width: 700px) {
+  .header-title {
+    font-size: 6rem;
+  }
+  .projects-title-header {
+    font-size: 4rem;
+    padding-bottom: 1rem;
+  }
+  .projects-header-container {
+    height: 20rem; 
+  }
+  .about-me-info-container {
+    font-size: 1rem;
+    padding-right: 3rem;
+  }
+  .form-subtext-container {
+    font-size: 1.5rem;
+  }
+
+  .projects-list {
+    padding-top: 0;
+    min-width: 44rem;
+  }
+  .projects-list-item {
+    margin-top: 13rem;
+    height: 30rem;
+    padding: 0;
+  }
+  .empty {
+    height: 20%;
+  }
+  .about-me-container {
+    height: 70rem;
+  }
+  .about-me-info {
+    padding-top: 6rem;
+  }
+  .about-me-subtitle {
+    font-size: 1.5rem;
+  }
+  .technologies-subtitle {
+    font-size: 1.5rem;
+  }
+  .proj-icon-img {
+    height: 3.5rem;
+    width: 3.5rem;
+  }
+  .contact-image {
+    padding-top: 2rem;
+  }
+  .contact-container {
+    padding-left: 4rem;
+  }
+  .email-link {
+    padding-top: 2rem;
+    font-size: 1rem;
+  }
+ 
+}
+
+
+@media (max-width: 700px) {
+  .projects-header-container {
+    padding-top: 7rem;
+  }
+
+  .about-me-container {
+    height: 80rem;
+  }
+
+  .contact-image {
+    padding-top: 6rem;
+  }
+}
+
