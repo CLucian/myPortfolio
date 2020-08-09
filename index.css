@@ -59,7 +59,7 @@ code {
 
 .modal-dialog {
   position: relative;
-  max-width: 80%;
+  /* max-width: 80%; */
   /* min-width: 58rem; */
   color: #fff;
   max-height: 90vh;
@@ -166,7 +166,7 @@ a {
   align-items: center;
   justify-content: center;
 
-  min-width: 45rem;
+  /* min-width: 45rem; */
 
 }
 
@@ -802,6 +802,10 @@ path {
 }
 
 @media (max-width: 500px) {
+
+  .code-link {
+    margin: 0;
+  }
 
   .contact-container {
     padding: 0rem;
