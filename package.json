@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "deploy": "gh-pages -d top"
+    "deploy": "gh-pages -d top",
+    "build": "react-scripts build"
   },
   "keywords": [],
   "author": "",
