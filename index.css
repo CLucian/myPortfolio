@@ -60,7 +60,7 @@ code {
 .modal-dialog {
   position: relative;
   max-width: 80%;
-  min-width: 58rem;
+  /* min-width: 58rem; */
   color: #fff;
   max-height: 90vh;
   min-height: 35.8rem;
