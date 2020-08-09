@@ -196,7 +196,15 @@ code {
   justify-content: space-evenly;
   align-items: center;
   height: 40rem;
-  min-width: 44rem;
+  /* min-width: 44rem; */
+}
+
+.proj-image-container {
+  width: 100%;
+}
+
+.projects-image {
+  width: 20rem;
 }
 
 .projects-title-container {
@@ -270,10 +278,15 @@ code {
 
 .project-title {
   color: #e9b258;
+  /* color: #c8c8cc; */
+  /* color: #fff; */
   margin-bottom: 6rem;
   font-size: 3.5rem;
-  text-shadow: 0 13.36px 8.896px #252525, 0 -2px 1px #252735;
-  margin-bottom: 4rem;
+  text-shadow: #000 0px 0px 2px,   #000 0px 0px 2px,   #000 0px 0px 2px,
+             #000 0px 0px 2px,   #000 0px 0px 2px,   #000 0px 0px 2px;
+
+  /* text-shadow: 0 13.36px 8.896px #252525, 0 -2px 1px #252735; */
+  margin-bottom: 2rem;
   text-align: center;
   display: flex;
   justify-content: center;
@@ -294,13 +307,14 @@ svg {
   font-size: 5rem;
   width: 10%;
   height: auto;
+  
 }
 
 path {
   display: flex;
   font-size: 4rem;
   justify-content: center;
-  fill: #e9b258;
+  fill: #e9e9eb;
   
 }
 
@@ -346,8 +360,30 @@ path {
   height: 55rem;
   background-color: #424557;
   z-index: 10;
+  /* background-image: url('/pictures/MovieDB-SS-full.jpg');
+  background-size: 100%;
+  background-repeat: no-repeat; */
 
 }
+
+
+#project-1 {
+  background-image: url('/pictures/MovieDB-SS-full.jpg');
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+#project-2 {
+  background-image: url('/pictures/Workout-Dictionary-SS1.png');
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+#project-3 {
+
+}
+
+
 
 .origin-side-project {
   width: 100%;
@@ -370,7 +406,7 @@ path {
 .about-me-info {
   display: flex;
   justify-content: space-evenly;
-  min-width: 44rem;
+  /* min-width: 44rem; */
 }
 
 .about-me-image-container {
@@ -410,7 +446,7 @@ path {
 .contact-container {
   height: 65rem;
   background-color: #252735;
-  min-width: 43rem;
+  /* min-width: 43rem; */
 }
 
 .contact { 
@@ -524,7 +560,7 @@ path {
   align-items: center;
   width: 100%;
   background-color: #282c34;
-  min-width: 45rem;
+  /* min-width: 45rem; */
 }
 
 .footer-text {
@@ -592,7 +628,7 @@ path {
     margin: 1rem;
     height: 45rem;
     width: 30%;
-    min-width: 14.5rem;
+    /* min-width: 14.5rem; */
   }
 
 
@@ -626,6 +662,16 @@ path {
  
 }
 
+@media (max-width: 800px) {
+  .contact-form-container {
+    width: 100%;
+  }
+
+  .form-subtext {
+    text-align: center;
+  }
+}
+
 @media (max-width: 700px) {
   .header-title {
     font-size: 6rem;
@@ -639,7 +685,7 @@ path {
   }
   .about-me-info-container {
     font-size: 1rem;
-    padding-right: 3rem;
+    /* padding-right: 3rem; */
   }
   .form-subtext-container {
     font-size: 1.5rem;
@@ -647,7 +693,7 @@ path {
 
   .projects-list {
     padding-top: 0;
-    min-width: 44rem;
+    /* min-width: 44rem; */
   }
   .projects-list-item {
     margin-top: 13rem;
@@ -699,5 +745,302 @@ path {
   .contact-image {
     padding-top: 6rem;
   }
+  .projects-container {
+    height: 80vh;
+  }
+
+  .projects-list {
+    height: 50%;
+    display: block;
+    margin: auto;
+    width: 100%;
+  }
+
+  .projects-list-item {
+    /* width: 50%; */
+    margin: auto;
+    margin-bottom: 3rem;
+    margin-top: 4rem;
+    width: 70%;
+    height: 90%;
+  }
+
+  .projects-header-container {
+    padding-bottom: 7rem;
+  }
+
+  .empty {
+    margin-top: 40rem;
+  }
+
+  .about-me-info {
+    /* background: black; */
+  }
+
+  .about-me-container {
+    /* width: 0%; */
+  }
+
 }
 
+@media (max-width: 500px) {
+
+  .contact-container {
+    padding: 0rem;
+  }
+
+  .contact-info {
+    width: 100%;
+  }
+
+  .contact-form-container {
+    width: 100%;
+  }
+
+  .contact-image-container {
+    display: none;
+  }
+
+  .contact-image {
+    display: none;
+  }
+
+  .contact-me-links {
+    font-size: 2rem;
+  }
+
+  .email-link {
+    font-size: 2rem;
+  }
+
+  .about-me-image-container {
+    width: 15rem;
+    height: 30rem;
+  }
+
+  .about-me-image {
+    width: 15rem;
+    height: 25rem;
+
+  }
+
+  .technologies-container {
+    width: 100%;
+  }
+
+  .about-me-info {
+    height: 100rem;
+  }
+
+  .about-me-container {
+    height: 90rem;
+  }
+
+}
+
+
+@media (max-width: 450px) {
+  .form-subtext {
+    text-align: center;
+  }
+
+  .contact-title {
+    padding-bottom: 3rem;
+  }
+
+  .contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: start;
+    width: 100%;
+  }
+
+  .contact-image-container {
+    display: none;
+  }
+
+  .contact-container {
+    padding: 0;
+  }
+
+  .contact-title {
+    text-align: center;
+  }
+
+  .projects-image-container {
+    width: 80%;
+    height: 30%;
+  }
+
+  .projects-image {
+    width: 100%;
+    height: 60%;
+  }
+
+  .empty {
+    height: 0rem;
+  }
+
+  .projects-header-container {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+  }
+
+  .contact-form-container {
+    width: 90%;
+  }
+
+  .hero-image-container {
+    /* padding-bottom: 5rem; */
+  }
+
+  .projects-title-container {
+    text-align: center;
+  }
+
+  .projects-title-header {
+    font-size: 3rem;
+  }
+
+  .projects-subtitle {
+    font-size: 1.5rem;
+  }
+
+  .projects-header-container {
+    padding-top: 5rem;
+    height: 60rem;
+  }
+
+
+  .about-me-info-container {
+    width: 60%;
+    padding: none;
+    text-align: center;
+  }
+
+  .empty {
+    height: 8rem;
+  }
+
+  .about-me-container {
+    height: 100rem;
+    padding-bottom: 10rem;
+  }
+  
+  .about-me-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+  }
+
+  .footer-text {
+    width: 100%;
+  }
+
+}
+
+
+@media (max-width: 400px) {
+  .header-title {
+    text-align: center;
+  }
+}
+
+
+@media (max-width: 350px) {
+
+  
+
+  .project-title {
+    font-size: 2rem;
+  }
+
+  .technologies-subtitle {
+    padding-bottom: 3rem;
+  }
+
+  .empty {
+    height: 2rem;
+    padding-bottom: 5rem;
+  }
+
+  .about-me-container {
+    height: 100rem;
+  }
+
+  .proj-tech-list {
+    display: flex;
+    flex-direction: column;
+  
+  }
+  
+
+  .contact {
+    padding: 0rem;
+  }
+
+  .contact-form-container {
+    width: 100%;
+  }
+
+  .form-subtext-container {
+    padding-top: 2rem;
+  
+  }
+
+  .email-link {
+    font-size: 1.5rem;
+  }
+
+  .contact-container {
+    padding-bottom: 8rem;
+  }
+
+
+}
+
+@media (max-width: 310px) {
+  .projects-list-item {
+    width: 90%;
+    height: 80%;
+  }
+
+}
+
+
+@media (max-width: 250px) {
+  .about-me-container {
+    /* min-width: 25rem; */
+    padding-bottom: 30rem;
+  }
+
+  .contact {
+    margin: 0;
+  }
+
+  .contact-form-container {
+    padding-top: 2rem;
+    width: 95%;
+  }
+
+  .form-subtext-container {
+    width: 95%;
+  }
+
+
+
+  .form-subtext-container {
+    padding: 0rem;
+  }
+
+}
