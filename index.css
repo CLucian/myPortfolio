@@ -368,13 +368,13 @@ path {
 
 
 #project-1 {
-  background-image: url('/pictures/MovieDB-SS-full.jpg');
+  background-image: url('pictures/MovieDB-SS-full.jpg');
   background-size: 100%;
   background-repeat: no-repeat;
 }
 
 #project-2 {
-  background-image: url('/pictures/Workout-Dictionary-SS1.png');
+  background-image: url('pictures/Workout-Dictionary-SS.png');
   background-size: 100%;
   background-repeat: no-repeat;
 }
