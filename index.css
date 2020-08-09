@@ -98,7 +98,7 @@ code {
 
 .code-link {
   color: #e9b258;
-  margin-right: 15rem;
+  margin-right: 10rem;
 }
 
 a {
@@ -168,6 +168,10 @@ a {
 
 }
 
+video {
+  width: 100%;
+  height: auto;
+}
 
 
 .pic-container {
