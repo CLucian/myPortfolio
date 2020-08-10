@@ -19,6 +19,8 @@ code {
 }
 
 
+
+
 .open-modal {
   font-weight: bold;
   background: var(--blue);
@@ -57,15 +59,15 @@ code {
 
 .modal-dialog {
   position: relative;
-  max-width: 80%;
-  min-width: 58rem;
+  /* max-width: 80%; */
+  /* min-width: 58rem; */
   color: #fff;
   max-height: 90vh;
-  min-height: 35.8rem;
+  /* min-height: 35.8rem; */
   height: auto;
   border-radius: 5px;
   background: var(--white);
-  overflow: auto;
+  /* overflow: auto; */
   cursor: default;
   background-color: #282c34;
   box-shadow:
@@ -93,6 +95,18 @@ code {
   padding-top: 7rem;
 }
 
+
+.code-link {
+  color: #e9b258;
+  margin-right: 10rem;
+  margin-left: 8rem;
+  font-size: 1.5rem;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
 
 .modal-dialog > * {
   padding: 1rem;
@@ -152,10 +166,14 @@ code {
   align-items: center;
   justify-content: center;
 
-  min-width: 45rem;
+  /* min-width: 45rem; */
 
 }
 
+video {
+  width: 100%;
+  height: auto;
+}
 
 
 .pic-container {
@@ -785,6 +803,10 @@ path {
 
 @media (max-width: 500px) {
 
+  .code-link {
+    margin: 0;
+  }
+
   .contact-container {
     padding: 0rem;
   }
@@ -840,6 +862,11 @@ path {
 
 
 @media (max-width: 450px) {
+
+  #modal-3-header {
+    font-size: 2rem;
+  }
+
   .form-subtext {
     text-align: center;
   }
@@ -945,6 +972,10 @@ path {
 
   .footer-text {
     width: 100%;
+  }
+
+  .modal-dialog {
+
   }
 
 }
