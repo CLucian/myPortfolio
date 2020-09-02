@@ -59,7 +59,7 @@ code {
 
 .modal-dialog {
   position: relative;
-  /* max-width: 80%; */
+  max-width: 80%;
   /* min-width: 58rem; */
   color: #fff;
   max-height: 90vh;
@@ -593,6 +593,7 @@ path {
 /* Media Queries */
 
 
+
 @media (max-width: 1500px) {
 	.about-me-info-container {
     width: 35%;
@@ -602,6 +603,10 @@ path {
   }
   .contact-image {
     width: 80%
+  }
+
+  .modal-dialog {
+    max-width: 100%;
   }
 
 }
