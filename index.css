@@ -1073,10 +1073,19 @@ path {
     width: 95%;
   }
 
-
-
   .form-subtext-container {
     padding: 0rem;
+  }
+
+}
+
+@media (max-width: 200px) {
+  .header-title {
+    font-size: 4rem;
+  }
+
+  .email-link {
+    font-size: 1rem;
   }
 
 }
