@@ -206,6 +206,9 @@ video {
   background-color: #252735;
 }
 
+.project-header:hover {
+  color: #e9b258;
+}
 
 .projects-header-container {
   padding-top: 2rem;
